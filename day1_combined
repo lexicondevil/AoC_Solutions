@@ -1,0 +1,16 @@
+floor = raw_input("SANTA NEEDS DIRECTIONS KIDS, AND HES A LITTLE TIPSY: ")
+
+floor_list = list(floor)
+flr = 0
+
+# Uncomment first if block for part 2 answer
+for count, x in enumerate(floor_list):
+    #if flr < 0:
+    #    print('Santa hit the basement at instruction position', count, x)
+    #    break
+    if x == ")":
+        flr -= 1
+    else:
+        flr += 1
+
+print(flr)
